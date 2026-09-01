@@ -1,0 +1,78 @@
+{
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "dpr": 2
+  },
+  "page": {
+    "width": 1920,
+    "height": 2941
+  },
+  "elements": {
+    "brand": {
+      "x": 15,
+      "y": 15,
+      "width": 230,
+      "height": 123.09375
+    },
+    "rhythmPanel": {
+      "x": 262,
+      "y": 172,
+      "width": 1644,
+      "height": 873.8125
+    },
+    "chronometer": {
+      "x": 264,
+      "y": 281.46875,
+      "width": 956.65625,
+      "height": 762.34375
+    },
+    "queue": {
+      "x": 1220.65625,
+      "y": 281.46875,
+      "width": 683.328125,
+      "height": 762.34375
+    },
+    "filterBench": {
+      "x": 277,
+      "y": 1170.28125,
+      "width": 1614,
+      "height": 105
+    },
+    "ledger": {
+      "x": 277,
+      "y": 1625.046875,
+      "width": 1614,
+      "height": 1127.5625
+    },
+    "privacyFootnote": {
+      "x": 262,
+      "y": 2795.609375,
+      "width": 1644,
+      "height": 107.375
+    },
+    "firstQueueItem": {
+      "x": 1250.65625,
+      "y": 380.5,
+      "width": 623.328125,
+      "height": 150.390625
+    },
+    "secondQueueItem": {
+      "x": 1250.65625,
+      "y": 539.890625,
+      "width": 623.328125,
+      "height": 150.390625
+    },
+    "firstContactRow": {
+      "x": 277,
+      "y": 1695.234375,
+      "width": 1614,
+      "height": 88.796875
+    }
+  },
+  "states": {
+    "data": "Built-in fictional demo contacts in a fresh isolated SQLite directory",
+    "home": "privacyMode=false",
+    "privacy": "privacyMode=true"
+  }
+}

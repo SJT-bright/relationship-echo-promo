@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>关系回响 · 宣传视频预览</title>
+  <style>
+    :root { color-scheme: light; font-family: "PingFang SC", system-ui, sans-serif; background: #edf2ee; color: #152421; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 48px 24px 72px; background: radial-gradient(circle at 50% 0, #fff, #edf2ee 58%); }
+    main { max-width: 1280px; margin: auto; }
+    header { display: flex; align-items: center; gap: 18px; margin-bottom: 30px; }
+    .mark { width: 54px; height: 54px; display: grid; place-items: center; border: 1px solid #1f756b; border-radius: 50%; color: #1f756b; font-size: 28px; }
+    h1 { margin: 0; font-family: "Songti SC", serif; font-size: 38px; }
+    header p { margin: 5px 0 0; color: #667570; }
+    section { padding: 24px; margin-top: 22px; border: 1px solid #ced8d2; border-radius: 24px; background: rgba(255,255,255,.9); box-shadow: 0 22px 70px rgba(15,59,52,.13); }
+    h2 { margin: 0 0 16px; font-family: "Songti SC", serif; font-size: 25px; }
+    video { display: block; width: 100%; background: #092d28; border-radius: 16px; }
+    .meta { margin: 12px 0 0; color: #667570; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="mark">⌾</div>
+      <div><h1>关系回响 · 宣传视频</h1><p>40 秒 · 1920×1080 · 真实页面 + 虚构演示数据</p></div>
+    </header>
+    <section>
+      <h2>含原创背景音乐</h2>
+      <video controls preload="metadata" src="relationship-echo-promo-bgm-final.mp4"></video>
+      <p class="meta">推荐预览版本：原创氛围音乐 + 界面动作音效。</p>
+    </section>
+    <section>
+      <h2>无背景音乐（保留音效）</h2>
+      <video controls preload="metadata" src="relationship-echo-promo-no-bgm.mp4"></video>
+      <p class="meta">适合后续重新配乐或渠道二次剪辑。</p>
+    </section>
+  </main>
+</body>
+</html>

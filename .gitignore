@@ -1,0 +1,21 @@
+.DS_Store
+node_modules/
+
+# Keep only the user-facing delivery files under out/final.
+out/*
+!out/final/
+!out/final/**
+
+# Intermediate audio master; the normalized mix is the render input.
+public/audio/relationship-echo-bed.wav
+
+# Local environment and private database artifacts must never be published.
+.env
+.env.*
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.pem
+*密码*
+*迁移*

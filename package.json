@@ -1,0 +1,27 @@
+{
+  "name": "relationship-echo-promo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture": "node scripts/capture-site.mjs",
+    "qa:stills": "node scripts/render-qa-stills.mjs",
+    "studio": "remotion studio src/index.ts",
+    "still": "remotion still src/index.ts RelationshipEchoPromoBgm out/stills/frame.png",
+    "render:clean": "remotion render src/index.ts RelationshipEchoPromoNoBgm out/final/relationship-echo-promo-no-bgm.mp4 --codec=h264 --crf=18",
+    "mix:bgm": "ffmpeg -y -i out/final/relationship-echo-promo-no-bgm.mp4 -i public/audio/relationship-echo-bed-mix.wav -filter_complex '[0:a]volume=1[sfx];[1:a]volume=0.7,afade=t=in:st=0:d=1.5,afade=t=out:st=37:d=3[bgm];[sfx][bgm]amix=inputs=2:duration=first:dropout_transition=0,alimiter=limit=0.94[out]' -map 0:v:0 -map '[out]' -c:v copy -c:a aac -b:a 320k -movflags +faststart -t 40 out/final/relationship-echo-promo-bgm-final.mp4",
+    "render:bgm": "npm run render:clean && npm run mix:bgm"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.484",
+    "@remotion/media": "4.0.484",
+    "puppeteer-core": "24.31.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "remotion": "4.0.484"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.17",
+    "typescript": "6.0.3"
+  }
+}
